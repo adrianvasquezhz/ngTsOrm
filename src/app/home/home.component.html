@@ -1,0 +1,20 @@
+<div>
+   <p>xyz works!</p>
+   <p>{{ variable }}</p>
+   <input type="text" [placeholder]="placeholderText" />
+</div>
+
+<div *ngFor="let item of lista">
+   <h4>{{ item.name }}</h4>
+   <img [src]="item.url" width="200" />
+</div>
+
+
+<div>
+   <input (input)="handleInput($event, view)" type="text" />
+   <p #view></p>
+</div>
+
+<p *ngIf="false">xd</p>
+
+<p>{{ msgFromApp }}</p>
